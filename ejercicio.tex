@@ -5,14 +5,41 @@
 \usepackage{amsmath}
 
 \begin{document}
-
-Escribe la fórmula de la solución a la ecuación en diferenvias lineal homogénea de primer orden con condición inicial:
+\begin{enumerate}
+\item-Escribe la fórmula de la solución a la ecuación en diferencias lineal homogénea de primer orden con condición inicial:
 $$x_{n+1}=ax_{n}$$
 $$x_{0}=c$$
 
-Solucion: $$x_{n}=a^{n}c$$
+Algunos resultados:
 \begin{align*}
   x_{0}&=c\\
-  x_1&=ac
+  x_1&=ax_0=ac\\
+  x_2&=ax_1=a^{2}c\\
+  x_3&=ax_2=a^{3}c\\
+  x_4&=ax_3=a^{4}c\\
+  *\\
+  *\\
+  *
 \end{align*}
+
+Solucion: $$x_{n}=a^{n}c$$
+
+\item-Escribe la solución a la ecuación en diferencias
+\begin{align*}
+  x_{n+1}&=e^{2n}x_n\\
+  x_0&=C
+\end{align*}
+Algunos resultados:
+\begin{align*}
+  x_0&=C\\
+  x_1&=e^0x_0=C\\
+  x_2&=e^2x_1=Ce^2\\
+  x_3&=e^4x_2=Ce^6\\
+  *\\
+  *\\
+  *
+\end{align*}
+Solución:
+$$x_n=Ce^{n(n+1)}$$
+\end{enumerate}
 \end{document}
